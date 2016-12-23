@@ -4,9 +4,11 @@ name: sinopia
 version: 1.4.0
 description: Private npm repository server
 
+author: wanfangdata
 
 repository:
   type: git
+  url: git://github.com/wanfangdata/sinopia
 
 main: index.js
 
