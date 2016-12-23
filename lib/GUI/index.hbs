@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
-    <title>{{ name }}</title>
+    <title>WFNPM</title>
 
     <link rel="icon" type="image/png" href="{{ baseUrl }}/-/static/favicon.png"/>
     <link rel="stylesheet" type="text/css" href="{{ baseUrl }}/-/static/main.css">
@@ -36,6 +36,7 @@
           <div class="navbar-left setup hidden-xs">
             <code class="white no-bg">npm set registry {{ baseUrl }}</code><br>
             <code class="white no-bg">npm adduser --registry {{ baseUrl }}</code>
+            <!--<code class="white no-bg">npm adduser --registry {{ baseUrl }}</code>-->
           </div>
 
           <!-- login/logout for large devices -->
@@ -76,7 +77,6 @@
         </div>
       </header>
     </header>
-
     <section class="content container packages-container" id="all-packages">
         {{#each packages}}
           {{> entry}}
@@ -123,5 +123,6 @@
 
     <script src="{{ baseUrl }}/-/static/jquery.min.js"></script>
     <script type='text/javascript' src='{{ baseUrl }}/-/static/main.js'></script>
+  <script>console.log({{{packagesJson}}})</script>
   </body>
 </html>
